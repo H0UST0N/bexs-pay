@@ -1,0 +1,29 @@
+.changePay {
+  color: #FFF;
+  font-size: 20px;
+  margin: 55px 0;
+
+  display: flex;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.changePay:hover {
+  color: yellow;
+}
+
+.title {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.doubleColumn {
+  display: flex;
+  gap: 40px;
+}

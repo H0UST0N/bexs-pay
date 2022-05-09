@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 28px;
+  height: 48px;
+  outline: none;
+  border: none;
+
+
+  background: #308E5F;
+  border-radius: 4px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.button:hover {
+  background-color: #205f40;
+}

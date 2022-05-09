@@ -1,0 +1,17 @@
+.form{
+    text-align: right;
+    width: 100%;
+    margin-left: 160px;
+}
+
+@media (max-width: 1000px) {
+    .form {
+        text-align: center;
+        width: 100%;
+        margin-top: 120px;
+        margin-left: 0;
+
+        position: none;
+        left: auto;
+    }
+}

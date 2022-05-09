@@ -1,0 +1,46 @@
+.content {
+  padding-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.input {
+  padding: 10px 0px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3C3C3C;
+
+  margin-bottom: 50px;
+
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #C6C6C6;
+  width: 100%;
+}
+
+.input::placeholder {
+  
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  
+  color: #C6C6C6;
+
+}
+
+.label {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 14px;
+
+  color: #C6C6C6;
+  
+}
+

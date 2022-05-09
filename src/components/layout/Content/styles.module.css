@@ -1,0 +1,17 @@
+.content {
+    background-color: #FFF;
+    width: 100%;
+    padding: 65px 10px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 100%;
+        padding: 40px;
+        justify-content: center;
+    }
+}

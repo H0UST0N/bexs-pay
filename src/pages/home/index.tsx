@@ -1,15 +1,25 @@
 import React from "react";
+
+
+import Button from "../../components/Button";
+import { useRouter } from "next/router";
+
 import styles from './styles.module.css';
 
-import Image from 'next/image';
-
-import logoBexs from '../../assets/img/logo.png';
-
-
 export default function Home() {
+    const router = useRouter();
     return (
-        <div className={styles.container}>
-            <Image src={logoBexs} />
+
+        <div className={styles.capa}>
+            <div className={styles.logo}>
+            </div>
+            <div className={styles.button}>
+                <Button type="button" onClick={() => router.push(`/payment`)}>
+                    CHECKOUT
+                </Button>
+            </div>
         </div>
+
+
     );
 }

@@ -1,0 +1,36 @@
+.creditCard {
+  color: #FFF;
+  width: 492px;
+  height: 302px;
+  padding: 35px 45px;
+  border-radius: 10px;
+  text-shadow: 0 1px 2px black;
+  box-shadow: 4px 4px 10px #444;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+}
+
+.creditCardUnfilled {
+  background-image: url('../../../assets/svg/unfilledCard.svg');
+}
+
+.creditCardFilled {
+  background-image: url('../../../assets/svg/filledCard.svg');
+}
+
+.creditCardFilledVisa {
+  background-image: url('../../../assets/svg/filledCardVisa.svg');
+}
+
+
+@media (max-width: 1000px) {
+  .creditCard {
+    padding: 15px;
+    top: 200px;
+    width: 280px;
+    height: 170px;
+  }
+}

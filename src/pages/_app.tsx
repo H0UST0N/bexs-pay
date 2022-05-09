@@ -1,14 +1,14 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import NextHead from 'next/head';
-
+import Container from '../components/layout/Container';
+import Head from '../components/layout/Head';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NextHead>
-        <title>Bexs Pay</title>
-      </NextHead>
-      <Component {...pageProps} />
+      <Head title={'Bexs Pay'} />
+      <Container>
+        <Component {...pageProps} />
+      </Container>
     </>
   )
 

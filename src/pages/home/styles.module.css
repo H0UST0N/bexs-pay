@@ -1,7 +1,25 @@
-.container {
-  width: 100%;
+.capa {
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url('../../assets/svg/capa.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6%;
+  width: 9%;
+  position: absolute;
+  left: 90%;
+  background-image: url('../../assets/svg/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button {
+  position: relative;
+  top: 80%;
+  float: right;
 }
