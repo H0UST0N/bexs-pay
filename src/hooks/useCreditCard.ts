@@ -37,23 +37,23 @@ export default function useCreditCard() {
 
     const [validationCard, setValidationCard] = useState<IValidationCreditCard>({
         numeroCartao: {
-            status: true,
+            status: false,
             messageError: ""
         },
         nome: {
-            status: true,
+            status: false,
             messageError: ""
         },
         validade: {
-            status: true,
+            status: false,
             messageError: ""
         },
         cvv: {
-            status: true,
+            status: false,
             messageError: ""
         },
         numeroParcelas: {
-            status: true,
+            status: false,
             messageError: ""
         }
     });
@@ -84,7 +84,7 @@ export default function useCreditCard() {
             validation = { ...validation, cvv: { status: true, messageError: "" } };
         }
 
-        if (card.numeroParcelas==="Número de parcelas") {
+        if (card.numeroParcelas==="Número de parcelas" || card.numeroParcelas==="") {
             validation = { ...validation, numeroParcelas: { status: false, messageError: "Insira o número de parcelas" } };
         } else {
             validation = { ...validation, numeroParcelas: { status: true, messageError: "" } };

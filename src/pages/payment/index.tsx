@@ -15,6 +15,7 @@ import Select from "../../components/general/Select";
 import { CreditCardContext } from "../../contexts/CreditCardContext";
 import Button from "../../components/general/Button";
 import Breadcrumb from "../../components/general/Breadcrumb";
+import Payments from "../../services/api/Payments";
 
 const optionsParcelas = [
     {
@@ -75,10 +76,15 @@ export default function Payment() {
     const router = useRouter();
     const { creditCard, validationCard, checkCard } = useContext(CreditCardContext);
 
-    const handleSubmit = (e: SyntheticEvent) => {
+    const handleSubmit = async (e: SyntheticEvent) => {
         e.preventDefault();
-        checkCard(creditCard);
-        console.log(validationCard);
+        await checkCard(creditCard);
+        if (validationCard.nome.status && validationCard.numeroCartao.status && validationCard.numeroParcelas.status && validationCard.cvv.status && validationCard.validade.status) {
+            await Payments.save(creditCard);
+        } else {
+            console.log('Cartão Inválido');
+        }
+        
     }
     return (
         <>
