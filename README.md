@@ -11,10 +11,14 @@ Aplicação front-end de pagamento Bexs
 ### CSS
 - CSS Modules
 
-## Instalação
-### (local)
-Clonar o projeto e executar: 
+## Execução
 
-```json-server --watch db.json --port 4000```
-```yarn install```. após o comando concluir, basta
-executar `yarn dev` o projeto iniciará na porta **3000**.
+1 - Clonar o projeto;
+
+2 - ```yarn install```. após o comando concluir, basta
+executar `yarn dev` o projeto iniciará na porta **3000**;
+
+3 - executar em um terminal separado: 
+
+```json-server --watch db.json --port 4000```;
+
