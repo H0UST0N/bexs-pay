@@ -1,0 +1,67 @@
+.breadcrumb {
+    margin-bottom: 160px;
+    display: inline-block;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4BDE95;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb div {
+    display: inline;
+}
+
+.stage {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    border: 1.3px solid #4BDE95;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.stageChecked {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    border: 1.3px solid #4BDE95;
+    background-color: #4BDE95;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.text {
+    padding-left: 30px;
+    text-align: center;
+}
+
+.icon {
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .breadcrumb {
+        display: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        position: none;
+        left: auto;
+    }
+}

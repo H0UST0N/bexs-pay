@@ -1,7 +1,7 @@
 import React from "react";
 
 
-import Button from "../../components/Button";
+import Button from "../../components/general/Button";
 import { useRouter } from "next/router";
 
 import styles from './styles.module.css';

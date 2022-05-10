@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const get = async (
   route: string,
-  id: number | null = null,
+  id: string | null = null,
   ): Promise<any> => {
   try {
     let response: any;
@@ -32,7 +32,7 @@ const get = async (
 const save = async (
   route: string,
   data: Partial<any>,
-  id?: number | string
+  id?: string
 ): Promise<any> => {
   try {
     let response: any;

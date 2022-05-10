@@ -13,22 +13,35 @@
   line-height: 19px;
   color: #3C3C3C;
 
-  margin-bottom: 50px;
-
   outline: none;
   border: none;
   border-bottom: 1px solid #C6C6C6;
   width: 100%;
 }
 
-.input::placeholder {
-  
+.inputError {
+  padding: 10px 0px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 19px;
-  
+  color: #3C3C3C;
+
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #EB5757;
+  width: 100%;
+}
+
+.input::placeholder {
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
   color: #C6C6C6;
 
 }
@@ -41,6 +54,16 @@
   line-height: 14px;
 
   color: #C6C6C6;
-  
+
 }
 
+.labelError {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #EB5757;
+
+}
